@@ -44,7 +44,7 @@
     "vue-jest": "^5.0.0-0"
   },
   "lint-staged": {
-    "*.{js,vue,jsx}": "eslint",
+    "*.{js,vue,jsx}": "npm run lint",
     "*.{css,vue}": "stylelint"
   },
   "husky": {
