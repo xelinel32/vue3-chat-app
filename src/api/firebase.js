@@ -1,4 +1,4 @@
-import FB from 'firebase';
+import fb from 'firebase';
 import 'firebase/auth';
 import 'firebase/firestore';
 
@@ -11,4 +11,4 @@ const firebaseConfig = {
   appId: process.env.FIREBASE_APP_ID,
 };
 
-FB.initializeApp(firebaseConfig);
+fb.initializeApp(firebaseConfig);

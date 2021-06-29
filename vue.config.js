@@ -1,3 +1,11 @@
+const path = require('path');
+
+const resolve = (dir) => path.join(__dirname, dir);
+
+/**
+ * @type {import('@vue/cli-service').ProjectOptions}
+ */
+
 module.exports = {
   devServer: {
     overlay: {
@@ -9,6 +17,15 @@ module.exports = {
   pwa: {
     workboxOptions: {
       skipWaiting: true,
+    },
+  },
+
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': resolve('src'),
+        // '@static': resolve('/static'),
+      },
     },
   },
 
